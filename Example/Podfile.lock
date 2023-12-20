@@ -1,0 +1,22 @@
+PODS:
+  - DropdownSearch (1.0.0)
+
+DEPENDENCIES:
+  - DropdownSearch (from `https://github.com/isabellanoriega99/DropdownSearch.git`, tag `1.0.0`)
+
+EXTERNAL SOURCES:
+  DropdownSearch:
+    :git: https://github.com/isabellanoriega99/DropdownSearch.git
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  DropdownSearch:
+    :git: https://github.com/isabellanoriega99/DropdownSearch.git
+    :tag: 1.0.0
+
+SPEC CHECKSUMS:
+  DropdownSearch: 9489737e2ea5468349adbfaf1a68f93d072b79a6
+
+PODFILE CHECKSUM: b7870117ad892764508617374491f4c91ccb01a7
+
+COCOAPODS: 1.14.2

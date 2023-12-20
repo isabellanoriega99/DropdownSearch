@@ -11,8 +11,8 @@ public struct DropdownSearch: View {
     public let textfieldWidthPercentage: CGFloat
     public let UIElementHeightPercentage: CGFloat
 
-    public init(stringToCollect: Binding<String> = .constant(""), placeholderText: String = "", options: [String] = [""], dropdownWidth: CGFloat = 0.9, dropdownColor: Color = .white,
-         textfieldWidthPercentage: CGFloat = 1.0, UIElementHeightPercentage: CGFloat = 0.5) {
+    public init(stringToCollect: Binding<String>, placeholderText: String, options: [String], dropdownWidth: CGFloat, dropdownColor: Color,
+         textfieldWidthPercentage: CGFloat, UIElementHeightPercentage: CGFloat) {
         _stringToCollect = stringToCollect
         self.placeholderText = placeholderText
         self.optionsArray = options

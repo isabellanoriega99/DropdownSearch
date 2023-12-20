@@ -12,7 +12,7 @@ public struct UIElement: View {
     public let dropdownWidth: CGFloat
     public let dropdownColor: Color
 
-    public init(searchText: Binding<String> = .constant(""), placeholder: String = "", options: [String] = [""], dropdownWidth: CGFloat = 0.9, dropdownColor: Color = .white) {
+    public init(searchText: Binding<String>, placeholder: String, options: [String], dropdownWidth: CGFloat, dropdownColor: Color) {
         _searchText = searchText
         self.placeholder = placeholder
         self.options = options

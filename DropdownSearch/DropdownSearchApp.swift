@@ -6,7 +6,7 @@ struct DropdownSearchApp: App {
 
     var body: some Scene {
         WindowGroup {
-            DropdownSearch(stringToCollect: $selectedString)
+            DropdownSearch(stringToCollect: $selectedString, placeholderText: "", options: [""], dropdownWidth: 1.0, dropdownColor: .white, textfieldWidthPercentage: 1.0, UIElementHeightPercentage: 0.5)
         }
     }
 }

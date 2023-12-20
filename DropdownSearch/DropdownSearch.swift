@@ -1,18 +1,19 @@
 import SwiftUI
 
-struct DropdownSearch: View {
+public struct DropdownSearch: View {
 
-    @Binding var stringToCollect: String
+    @Binding public var stringToCollect: String
 
-    let placeholderText: String
-    let optionsArray: [String]
-    let dropdownWidthPercentage: CGFloat
-    let dropdownColor: Color
-    let textfieldWidthPercentage: CGFloat
-    let UIElementHeightPercentage: CGFloat
+    public let placeholderText: String
+    public let optionsArray: [String]
+    public let dropdownWidthPercentage: CGFloat
+    public let dropdownColor: Color
+    public let textfieldWidthPercentage: CGFloat
+    public let UIElementHeightPercentage: CGFloat
 
-    init(stringToCollect: Binding<String>, placeholderText: String, options: [String], dropdownWidth: CGFloat, dropdownColor: Color,
-         textfieldWidthPercentage: CGFloat, UIElementHeightPercentage: CGFloat) {
+    public init(stringToCollect: Binding<String> = .constant(""), placeholderText: String = "", options: [String] = [""], dropdownWidth: CGFloat = 0.9, dropdownColor: Color = .white,
+         textfieldWidthPercentage: CGFloat = 1.0, UIElementHeightPercentage: CGFloat = 0.5) {
+        _stringToCollect = stringToCollect
         self.placeholderText = placeholderText
         self.optionsArray = options
         self.dropdownWidthPercentage = dropdownWidth
@@ -21,7 +22,7 @@ struct DropdownSearch: View {
         self.UIElementHeightPercentage = UIElementHeightPercentage
     }
 
-    var body: some View {
+    public var body: some View {
         VStack {
             UIElement(searchText: $stringToCollect,
                       placeholder: placeholderText,

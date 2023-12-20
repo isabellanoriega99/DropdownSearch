@@ -1,18 +1,18 @@
 import SwiftUI
 
-struct UIElement: View {
+public struct UIElement: View {
 
-    @Binding var searchText: String
-    @State private var isEditing = false
-    @State private var isDropdownVisible = false
-    @State private var selectedOption: String?
+    @Binding public var searchText: String
+    @State public var isEditing = false
+    @State public var isDropdownVisible = false
+    @State public var selectedOption: String?
 
-    let placeholder: String
-    let options: [String]
-    let dropdownWidth: CGFloat
-    let dropdownColor: Color
+    public let placeholder: String
+    public let options: [String]
+    public let dropdownWidth: CGFloat
+    public let dropdownColor: Color
 
-    init(searchText: Binding<String>, placeholder: String, options: [String], dropdownWidth: CGFloat, dropdownColor: Color) {
+    public init(searchText: Binding<String> = .constant(""), placeholder: String = "", options: [String] = [""], dropdownWidth: CGFloat = 0.9, dropdownColor: Color = .white) {
         _searchText = searchText
         self.placeholder = placeholder
         self.options = options
@@ -20,7 +20,7 @@ struct UIElement: View {
         self.dropdownColor = dropdownColor
     }
     
-    var filteredOptions: [String] {
+    public var filteredOptions: [String] {
         if searchText.isEmpty {
             return options
         } else {
@@ -28,7 +28,7 @@ struct UIElement: View {
         }
     }
     
-    var body: some View {
+    public var body: some View {
         VStack {
             TextField(placeholder, text: $searchText, onEditingChanged: { editing in
                 self.isEditing = editing

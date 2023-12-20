@@ -9,18 +9,14 @@
 /* Begin PBXBuildFile section */
 		F91147CA2B324B1700F35030 /* DropdownSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91147C92B324B1700F35030 /* DropdownSearch.swift */; };
 		F91147CC2B324B1900F35030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91147CB2B324B1900F35030 /* Assets.xcassets */; };
-		F91147CF2B324B1900F35030 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91147CE2B324B1900F35030 /* Preview Assets.xcassets */; };
 		F91147D62B324B3D00F35030 /* UIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91147D52B324B3D00F35030 /* UIElement.swift */; };
-		F91147D82B333D5F00F35030 /* DropdownSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91147D72B333D5F00F35030 /* DropdownSearchApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F91147C42B324B1700F35030 /* DropdownSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropdownSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91147C92B324B1700F35030 /* DropdownSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownSearch.swift; sourceTree = "<group>"; };
 		F91147CB2B324B1900F35030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F91147CE2B324B1900F35030 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F91147D52B324B3D00F35030 /* UIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElement.swift; sourceTree = "<group>"; };
-		F91147D72B333D5F00F35030 /* DropdownSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownSearchApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,21 +49,11 @@
 		F91147C62B324B1700F35030 /* DropdownSearch */ = {
 			isa = PBXGroup;
 			children = (
-				F91147D72B333D5F00F35030 /* DropdownSearchApp.swift */,
 				F91147C92B324B1700F35030 /* DropdownSearch.swift */,
 				F91147D52B324B3D00F35030 /* UIElement.swift */,
 				F91147CB2B324B1900F35030 /* Assets.xcassets */,
-				F91147CD2B324B1900F35030 /* Preview Content */,
 			);
 			path = DropdownSearch;
-			sourceTree = "<group>";
-		};
-		F91147CD2B324B1900F35030 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F91147CE2B324B1900F35030 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +114,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91147CF2B324B1900F35030 /* Preview Assets.xcassets in Resources */,
 				F91147CC2B324B1900F35030 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91147CA2B324B1700F35030 /* DropdownSearch.swift in Sources */,
-				F91147D82B333D5F00F35030 /* DropdownSearchApp.swift in Sources */,
 				F91147D62B324B3D00F35030 /* UIElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
